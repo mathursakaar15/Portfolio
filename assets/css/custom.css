@@ -1,0 +1,83 @@
+#header h1 {
+  font-size: 1.75em;
+  font-weight: 400;
+}
+
+#header h2 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 0.25em;
+}
+
+#header p {
+  font-size: 0.95em;
+  line-height: 1.5;
+}
+
+#header .icons a {
+  color: rgba(255, 255, 255, 0.4);
+  border: none; /* removes the dotted underline */
+}
+
+#header .icons a:hover {
+  color: #ffffff !important; /* or brighter green/white on hover if you prefer */
+}
+
+ul.alt img {
+  height: 40px;      /* make logos smaller */
+  width: auto;       /* keep aspect ratio */
+  margin-right: 8px; /* spacing between logo and text */
+  vertical-align: middle; /* aligns logo with text baseline */
+}
+
+ul .subtext {
+  font-size: 0.8em;       /* smaller text */
+  color: #777;            /* greyed out for subtle look */
+  margin-left: 8px;      /* indent so it lines up under text, not logo */
+}
+
+/* Remove dotted underline on links in alt list */
+ul.alt li a {
+  border-bottom: none !important;   /* remove dotted underline */
+  text-decoration: none !important; /* ensure no underline */
+  color: inherit;                   /* same color as text */
+}
+
+
+
+/* Add arrow after links in alt list */
+ul.alt li a::after {
+  content: " ↗";       /* simple arrow symbol */
+  vertical-align: super;
+  font-size: 0.7em;    /* slightly smaller than text */
+  color: inherit;      /* same color as text */
+  margin-left: px;    /* little space before arrow */
+}
+
+#two p .subtext {
+  display: block;
+  font-size: 1em;       /* smaller text */
+  line-height: 2.5;
+  margin-left: px;
+}
+
+#four ul .subtext {
+  display: block;
+  font-size: 0.8em;       /* smaller text */
+  color: #777;            /* greyed out for subtle look */
+  margin-left: 8px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* two equal columns */
+  gap: 1.2em 2em;                 /* row gap, column gap */
+}
+
+.skill .subtext {
+  display: block;
+  font-size: 0.85em;
+  color: #777;
+  line-height: 1.3;
+  margin-top: 0.2em;
+}
